@@ -24,9 +24,8 @@ class Navbar extends Component{
                         </Link>
                         {/* button to handle the state of the toggle menu*/}
                         <button type="button" className="nav-btn" onClick={this.handleToggle}>
-                            <FaAlignRight classname="nav-icon" />
+                            <FaAlignRight className="nav-icon" />
                         </button>
-                    </div>
                     {/* create a list of navigation bar options and link the options with correct routess*/}
                     <ul className={this.state.isOpen? "nav-links show-nav" : "nav-links"}>
                         <li>
@@ -36,6 +35,7 @@ class Navbar extends Component{
                             <Link to="/rooms">Rooms</Link>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </nav>
         )
